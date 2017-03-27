@@ -1,0 +1,273 @@
+body {
+  background-repeat: repeat;
+  font-family: sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-model: border-box;
+}
+
+.clearfix:after{
+  visibility: hidden;
+  display: table;
+  clear: both;
+  content: " ";
+}
+
+.center{
+  text-align: center;
+}
+
+.header{
+  width: 100%;
+  height: 310px;
+  background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url("../img/background.jpg");
+  background-size: cover;
+  box-shadow: 0px -10px 50px black;
+  text-align: center;
+  background-position: center center;
+}
+.header-content{
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.header-content h1{
+  display: inline;
+  font-size: 3em;
+}
+
+.header-content p{
+  font-size: 2em;
+}
+
+.main {
+  border-radius: 3px;
+  text-align: center;
+  color: #36454F;
+}
+.about{
+  padding: 20px;
+  margin: 20px auto;
+  margin-bottom: 100px;
+}
+
+.about p{
+  margin: 30px 0;
+  font-size: 1.3em;
+  line-height: 1.9em;
+  color: #34495e;
+}
+
+.about a{
+  font-size: 1.7em;
+  color: black;
+  margin: 0 20px;
+}
+
+.about a:hover{
+  color: gray;
+}
+
+.about img{
+  border-radius: 10%;
+  width: 170px;
+  display: block;
+  margin: 20px auto;
+  height: 170px;
+}
+
+.container{
+ position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.container-big{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.floaty{
+  float: left;
+  min-width: 300px;
+  margin: 0 10px;
+  text-align: left;
+}
+
+
+.dark-theme{
+  background-color: #263238;
+  width: 100%;
+  padding: 80px 0;
+  color: rgba(255,255,255,0.9);
+}
+
+.projects{
+  margin: 100px 0;
+}
+
+.project{
+  background-color: rgba(22, 160, 133,1.0);
+  width: 320px;
+  height: 230px;
+  display: block;
+  float: left;
+  text-decoration: none;
+  transition: box-shadow .3s;
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+
+.project-front{
+  position: absolute;
+  width: 100%;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  transition: all .3s;
+}
+
+.project-back{
+  width: 100%;
+  height: 230px;
+  position: absolute;
+  background-color: white;
+  top: 210px;
+  left: 0;
+  transition: all .3s;
+}
+
+.project:hover .project-back{
+  top: 0;
+}
+
+
+.project:hover{
+  cursor: pointer;
+}
+
+
+.text-med{
+  font-size: 1.3em;
+  padding: 10px 30px;
+}
+
+
+.text-right{
+  text-align: right;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    font-size: 3em;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.footer{
+  background-color: #263238;
+  padding: 15px;
+}
+
+@media screen and (max-width: 960px), screen and (-webkit-min-device-pixel-ratio: 3.0){
+  #intro-fill{
+    font-size: 1.9em;
+  }
+  .header-content p{
+    font-size: 1.7em;
+  }
+
+  .intro-dot{
+    font-size: 1.9em;
+  }
+
+  .typed-cursor{
+    font-size: 1.9em;
+  }
+  .floaty{
+    float: none;
+    display: block;
+    max-width: 500px;
+    padding: 0 40px;
+    min-width: 200px;
+    margin: 0 auto;
+  }
+
+  #intro-info{
+    position: absolute;
+    top: 240px;
+    left: 0;
+    font-size: 1.2em;
+    right: 0;
+  }
+
+  .project{
+    float: none;
+    height: auto;
+    position: normal;
+    background-color: none;
+    display: inline;
+    padding: 30px 0;
+    margin: 40px auto;
+  }
+
+  .project-back, .project-front{
+    position: static;
+    top: 0;
+  }
+
+  .project-front{
+    height: auto;
+    margin: 0;
+  }
+
+  .project-back{
+    position: inherit;
+    height: auto;
+  }
+
+  .project-back p{
+    margin: 0;
+  }
+
+  .project h2{
+    color: #36454F;
+    transition: color .3s;
+  }
+
+  .back-to-top-p{
+    font-size: .8em;
+  }
+
+  .project:hover h2{
+    padding: 0;
+    color: gray;
+  }
+
+  .text-right{
+    text-align: left;
+  }
+
+}
