@@ -9,36 +9,19 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
+
 
   <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
   <![endif]-->
-  
+
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="images/favicon.ico">
 </head><!--/head-->
 
 <body>
-
-  <header id="home">
-    <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="item active" style="background-image: url(images/slider/1.jpg)">
-          <div class="caption">
-            <h1 class="animated fadeInLeftBig">Mark Sythammavong</h1>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#about">Who Am I</a>
-          </div>
-        </div>
-      </div>
-      <a class="left-control" href="#home-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-      <a class="right-control" href="#home-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
-
-      <a id="tohash" href="#about"><i class="fa fa-angle-down"></i></a>
-
-    </div><!--/#home-slider-->
+<!--
     <div class="main-nav">
       <div class="container">
         <div class="navbar-header">
@@ -50,70 +33,47 @@
           </button>
           <a class="navbar-brand" href="index.html">
             <h1><img class="img-responsive" src="images/logo.png" alt="logo"></h1>
-          </a>                    
+          </a>
         </div>
         <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">                 
-            <li class="scroll"><a href="#about">Mark</a></li>                     
+          <ul class="nav navbar-nav navbar-right">
+            <li class="scroll"><a href="#about">Mark</a></li>
             <li class="scroll"><a href="#portfolio">Portfolio</a></li>
-            <li class="scroll"><a href="#contact">Contact</a></li>       
+            <li class="scroll"><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
-    </div><!--/#main-nav-->
+    </div></#main-nav-->
   </header><!--/#home-->
 
   <section id="about" class="parallax">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="about-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <h2>About Mark</h2>
-            <p>Former Developer, turned information security consultant, turned product designer/manager </p>
-            <p>Keep it Simple, Stupid. It's easy to complicate any issue but it takes hard work to simplify one.</p>
-          </div>
-        </div>
-        <div class="col-sm-6">
-              <p class="lead">User Experiences</p>
-              Blah blah
-              </div>
+        <div class="col-sm-8">
+            <h2>Mark Sythammavong</h2>
+            <p>Hello. I’m a Product Manager. Information Security Consultant. Former Developer.</p>
+            <p>I am an product consultant for an internal SaaS tool (<a href="http://www.rsam.com">RSAM</a>) for centralizing client's risk management processes at <a href="http://www.dnb.com/">Dun & Bradstreet</a>. </p>
+            <p>I used to work at consulting firms Accenture and Grant Thornton until I went independent.</p>
+            <p>I was part of the teams that created and launched <a href="https://studyinthestates.dhs.gov/">Study in the States</a> and <a href="http://fastpotomacyard.com">Fast Potomac Yard</a>.</p>
+            <br>
+            <br>
+            <br>
+            <p>Feel free to reach me at <a href="mailto:mark@himarko.com">mark@himarko.com</a> or through <a href="https://www.linkedin.com/in/marksythammavong/">LinkedIn</a> for projects or opportunities.</p>
         </div>
       </div>
     </div>
   </section><!--/#about-->
-
+<!--
   <section id="portfolio">
     <div class="container">
       <div class="row">
-        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp">
           <h2>My Work</h2>
           <p>Here are some of the projects I have worked on</p>
         </div>
-      </div> 
+      </div>
     </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-3">
-          <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/1.jpg" alt="">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Mobile Barber</h3>
-                    <p>Design</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="col-sm-3">
           <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
             <div class="folio-image">
@@ -345,17 +305,17 @@
               </div>
             </div>
           </div>
-        </div>      
+        </div>
       </div>
     </div>
     <div id="portfolio-single-wrap">
       <div id="portfolio-single">
       </div>
-    </div><!-- /#portfolio-single-wrap -->
+    </div>
   </section><!--/#portfolio-->
-
+<!--
   <section id="contact">
-    
+
     <div id="contact-us" class="parallax">
       <div class="container">
         <div class="row">
@@ -367,15 +327,16 @@
              <a href="resume.pdf" target="_blank">Resume</a>
           </div>
         </div>
-    </div>        
+    </div>
   </section><!--/#contact-->
+  <!--
   <footer id="footer">
     <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
       <div class="container text-center">
         <div class="social-icons">
           <ul>
             <li><a class="envelope" href="#"><i class="fa fa-envelope"></i></a></li>
-            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li> 
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
             <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
             <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
             <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
@@ -385,7 +346,7 @@
       </div>
     </div>
   </footer>
-
+-->
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/jquery.inview.min.js"></script>
